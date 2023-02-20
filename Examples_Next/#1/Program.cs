@@ -13,7 +13,7 @@ Console.WriteLine($"Максимальная цифра числа {num} -> {max
 
 
 
-// 11 НП, которая принимает на вход трехзначное число и на выходе показывает вторую цифру этого числа.
+// 10 НП, которая принимает на вход трехзначное число и на выходе показывает вторую цифру этого числа.
 /*
 Console.Clear();
 int num = new Random().Next(100, 1000);
@@ -90,16 +90,15 @@ else
 /*
 Console.Clear();
 Console.WriteLine("Введите число от 1 до 7:");
-Console.ReadLine();
-int num = new Random().Next(1, 7);
+int num = int.Parse((Console.ReadLine())!);
 
-    if (num == 1) //Не могу записать числа на проверку по порядку - типа 1,2,3,4,5 ?
+    if (num > 5)       
     {
-        Console.WriteLine($"{num}->Go to WORK");
+        Console.WriteLine($"{num} -> ВЫХОДНОЙ");
     }
     else
     {
-    Console.WriteLine($"{num}  -> ВЫХОДНОЙ");}
+        Console.WriteLine($"{num} ->Go to WORK");}    // Код работает !
 */
 
 
